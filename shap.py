@@ -62,7 +62,7 @@ masker = shap.maskers.Text(tokenizer, mask_token=tokenizer.mask_token)
 
 shap_explainer = shap.Explainer(predict_fn, masker)
 
-text = "I love pink pussy."
+text = "that movie was good."
 shap_values = shap_explainer([text])
 
 # Print SHAP explanation
